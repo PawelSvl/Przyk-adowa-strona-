@@ -1,0 +1,55 @@
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Przykładowa strona o zespole "Metallica"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Zeyada" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+   
+    <header class="header">
+        <div class="logo">
+           <a href="index.html"> <img class="logo__img" src="img/metalica-images.png" alt="Logo w postaci stylizowanego napisu 'Metallica'"></a>
+        </div>
+        <div class="toggle">
+            <i class="fa fa-bars hamburger-icon" aria-hidden="true"></i>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li li class="menu__item">
+                    <a class="menu__link"  href="#"><i class="fa fa-picture-o menu__link--icons" aria-hidden="true"></i>Galeria</a>
+                </li>
+                <li li class="menu__item">
+                    <a class="menu__link"  href="#"><i class="fa fa-user-o menu__link--icons" aria-hidden="true"></i>Muzycy</a>
+                </li>
+                <li li class="menu__item">
+                    <a class="menu__link"  href="#"><i class="fa fa-commenting-o menu__link--icons" aria-hidden="true"></i>O Zespole</a>
+                </li>
+                 <li li class="menu__item">
+                    <a class="menu__link"  href="#"><i class="fa fa-envelope-o menu__link--icons" aria-hidden="true"></i>Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+     <section class="jumbotron">
+        <div class="jumbotron-slogan">
+            <h1>„Waiting for the one day that never comes.”</h1>
+        </div>
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.hamburger-icon').click(function() {
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
+</body>
+</html>
